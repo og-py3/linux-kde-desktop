@@ -1,6 +1,9 @@
 # Linux KDE Desktop
 
 > A persistent, browser-accessible KDE Desktop environment powered by Docker and Dev Containers.
+>
+
+**By Haripriyan**
 
 ---
 
