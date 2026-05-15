@@ -1,0 +1,11 @@
+{
+  "name": "Persistent KDE Desktop",
+  "build": { "dockerfile": "../Dockerfile" },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": { "label": "KDE Desktop", "onAutoForward": "openBrowser" }
+  },
+  "postStartCommand": "chmod +x /workspaces/linux/scripts/start-desktop.sh && bash /workspaces/linux/scripts/start-desktop.sh",
+  "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} },
+  "remoteUser": "root"
+}
